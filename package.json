@@ -1,31 +1,28 @@
 {
   "name": "tecmicroservices",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "TECMicroServices",
+  "main": "index.js",
   "dependencies": {
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "express": "^4.15.3",
+    "password-generator": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node index.js"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yenus210/TECMicroServices.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yenus210/TECMicroServices/issues"
+  },
+  "homepage": "https://github.com/yenus210/TECMicroServices#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "password-generator": "^2.2.3"
   }
 }
