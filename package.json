@@ -19,9 +19,6 @@
     "url": "https://github.com/yenus210/TECMicroServices/issues"
   },
   "homepage": "https://github.com/yenus210/TECMicroServices#readme",
-  "devDependencies": {
-    "nodemon": "^1.19.4"
-  },
   "dependencies": {
     "express": "^4.17.1",
     "next": "^9.1.3",
