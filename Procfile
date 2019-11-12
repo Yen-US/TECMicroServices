@@ -1,1 +1,1 @@
-web: next
+web: next start
