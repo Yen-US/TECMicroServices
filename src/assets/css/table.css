@@ -6,11 +6,11 @@ table.blueTable {
   border-collapse: collapse;
 }
 table.blueTable td, table.blueTable th {
-  padding: 10px 40px;
+  padding: calc(5px + 1vmin) calc(10px + 1vmin);
 }
 table.blueTable tbody td {
   color: RGB(46, 52, 66);
-  font-size: 16px;
+  font-size: calc(1px + 2vmin);
 }
 table.blueTable tr:nth-child(even) {
   background: #B4B6CF;
@@ -23,7 +23,7 @@ table.blueTable thead {
   border-bottom: 2px solid #444444;
 }
 table.blueTable thead th {
-  font-size: 22px;
+  font-size: calc(10px + 2vmin);
   font-weight: bold;
   text-align: left;
   color: RGB(233, 236, 245);
@@ -34,7 +34,7 @@ table.blueTable thead th:first-child {
 }
 
 table.blueTable tfoot {
-  font-size: 20px;
+  font-size: calc(10px + 2vmin);
   font-weight: bold;
   color: #000000;
   background: #57586F;
@@ -44,7 +44,7 @@ table.blueTable tfoot {
   border-top: 2px solid #444444;
 }
 table.blueTable tfoot td {
-  font-size: 14px;
+  font-size:calc(5px + 2vmin);
 }
 table.blueTable tfoot .links {
   text-align: right;
