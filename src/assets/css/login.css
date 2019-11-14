@@ -1,14 +1,14 @@
-.App {
+.login {
   text-align: center;
 }
 
-.App-header {
-  background-color: RGB(46, 52, 66);
+.login-header {
+  background-color: RGB(233, 236, 245);
   min-height: 100vh;
   min-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: calc(10px + 2vmin);
-  color: RGB(233, 236, 245);
+  color: RGB(46, 52, 66);
 }

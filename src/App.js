@@ -1,16 +1,16 @@
 import React from 'react';
-import logo from './assets/images/logo.svg';
 import './assets/css/App.css';
 import './assets/css/table.css';
 
-function App() {
-  return (
+class App extends React.Component {
+  render(){
+    return(
     <div className="App">
       <header className="App-header">
       <h1> TEC Micro Services
       </h1>
         <div>
-        <table class="blueTable">
+        <table className="blueTable">
           <thead>
           <tr>
           <th>Nombre</th>
@@ -22,8 +22,8 @@ function App() {
           </thead>
           <tfoot>
           <tr>
-          <td colspan="5">
-          <div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
+          <td colSpan="5">
+          <div className="links"><a href="#">&laquo;</a> <a className="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
           </td>
           </tr>
           </tfoot>
@@ -55,7 +55,8 @@ function App() {
 
       </header>
     </div>
-  );
+    )
+}
 }
 
 export default App;
