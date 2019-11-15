@@ -9,6 +9,14 @@ var user2={
     user:"yen",
     password:"yen"
 }
+var user3={
+    user:"ash",
+    password:"ash"
+}
+var user4={
+    user:"jos",
+    password:"jos"
+}
 var json = [user1,user2]
 
 function getLog(){
