@@ -17,7 +17,7 @@ var user4={
     user:"jos",
     password:"jos"
 }
-var json = [user1,user2]
+var json = [user1,user2,user3,user4]
 
 function getLog(){
     
