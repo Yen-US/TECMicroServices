@@ -5,17 +5,14 @@ import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
 import "./index"
-import page from './index';
 import ReactDOM from 'react-dom';
 import App from "./App"
+import getLog from "./loginXML"
 
-var user = ""
-var password = ""
-
-
-
-
-  
+var user = "";
+var password = "";
+var flag=false;
+ 
 class login extends React.Component{
 
   render() {
@@ -24,7 +21,6 @@ class login extends React.Component{
         <h1>
         TEC Micro Services
         </h1>
-        
         <div>
         <TextField
               
@@ -83,13 +79,18 @@ class login extends React.Component{
 
 
 verLog(){
-  if (user === "admin" && password === "admin"){
-    
-    return (ReactDOM.render(<App/>, document.getElementById('root')))
-  }else{
-    return (alert("Usuario o Contraseña Incorrectos"))
+  
+  function verLogon(e){
+    if (user === e.user && password === e.password){
+      flag=true
+      return (ReactDOM.render(<App/>, document.getElementById('root')));
+    };
   }
 
+  getLog().forEach(element => verLogon(element));
+  if(flag){}else{
+    return (alert("Usuario o Contraseña Incorrectos"))
+  }
 }
 
 _handleTextFieldChangeU(e){
@@ -101,8 +102,5 @@ _handleTextFieldChangeP(e){
   password=e.target.value
 }
 }
-
-
-
 
 export default login
