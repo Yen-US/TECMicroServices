@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root freq="284">
+  <leftChild freq="122">
+    <leftChild freq="54">
+      <leftChild freq="25">
+        <leftChild freq="12">
+          <leftChild freq="6" char="g" />
+          <rightChild freq="6">
+            <leftChild freq="3" char="=" />
+            <rightChild freq="3" char="D" />
+          </rightChild>
+        </leftChild>
+        <rightChild freq="13">
+          <leftChild freq="6">
+            <leftChild freq="3" char="y" />
+            <rightChild freq="3" char="I" />
+          </leftChild>
+          <rightChild freq="7" char="o" />
+        </rightChild>
+      </leftChild>
+      <rightChild freq="29">
+        <leftChild freq="14" char="a" />
+        <rightChild freq="15">
+          <leftChild freq="7" char="c" />
+          <rightChild freq="8">
+            <leftChild freq="4">
+              <leftChild freq="2">
+                <leftChild freq="1" char="5" />
+                <rightChild freq="1" char="v" />
+              </leftChild>
+              <rightChild freq="2" char="z" />
+            </leftChild>
+            <rightChild freq="4">
+              <leftChild freq="2" char="9" />
+              <rightChild freq="2">
+                <leftChild freq="1" char="8" />
+                <rightChild freq="1" char="-" />
+              </rightChild>
+            </rightChild>
+          </rightChild>
+        </rightChild>
+      </rightChild>
+    </leftChild>
+    <rightChild freq="68">
+      <leftChild freq="33">
+        <leftChild freq="16">
+          <leftChild freq="8">
+            <leftChild freq="4">
+              <leftChild freq="2">
+                <leftChild freq="1" char="F" />
+                <rightChild freq="1" char="U" />
+              </leftChild>
+              <rightChild freq="2" char="?" />
+            </leftChild>
+            <rightChild freq="4" char="u" />
+          </leftChild>
+          <rightChild freq="8" char="r" />
+        </leftChild>
+        <rightChild freq="17" char="e" />
+      </leftChild>
+      <rightChild freq="35">
+        <leftChild freq="17">
+          <leftChild freq="8">
+            <leftChild freq="4">
+              <leftChild freq="2">
+                <leftChild freq="1" char="Y" />
+                <rightChild freq="1" char="x" />
+              </leftChild>
+              <rightChild freq="2">
+                <leftChild freq="1" char="S" />
+                <rightChild freq="1" char="T" />
+              </rightChild>
+            </leftChild>
+            <rightChild freq="4">
+              <leftChild freq="2" char="h" />
+              <rightChild freq="2">
+                <leftChild freq="1" char="W" />
+                <rightChild freq="1" char="3" />
+              </rightChild>
+            </rightChild>
+          </leftChild>
+          <rightChild freq="9">
+            <leftChild freq="4" char="6" />
+            <rightChild freq="5" char="d" />
+          </rightChild>
+        </leftChild>
+        <rightChild freq="18">
+          <leftChild freq="9" char="/" />
+          <rightChild freq="9" char="n" />
+        </rightChild>
+      </rightChild>
+    </rightChild>
+  </leftChild>
+  <rightChild freq="162">
+    <leftChild freq="73">
+      <leftChild freq="35" char=" " />
+      <rightChild freq="38">
+        <leftChild freq="19">
+          <leftChild freq="9" char="s" />
+          <rightChild freq="10" char="i" />
+        </leftChild>
+        <rightChild freq="19" char="&lt;" />
+      </rightChild>
+    </leftChild>
+    <rightChild freq="89">
+      <leftChild freq="41">
+        <leftChild freq="19" char="&gt;" />
+        <rightChild freq="22">
+          <leftChild freq="11">
+            <leftChild freq="5">
+              <leftChild freq="2" char="b" />
+              <rightChild freq="3" char="2" />
+            </leftChild>
+            <rightChild freq="6">
+              <leftChild freq="3" char="p" />
+              <rightChild freq="3" char="1" />
+            </rightChild>
+          </leftChild>
+          <rightChild freq="11" char="l" />
+        </rightChild>
+      </leftChild>
+      <rightChild freq="48">
+        <leftChild freq="24">
+          <leftChild freq="12" char="&#xD;" />
+          <rightChild freq="12">
+            <leftChild freq="6">
+              <leftChild freq="3" char="." />
+              <rightChild freq="3" char="0" />
+            </leftChild>
+            <rightChild freq="6" char="t" />
+          </rightChild>
+        </leftChild>
+        <rightChild freq="24">
+          <leftChild freq="12" char="&#xA;" />
+          <rightChild freq="12">
+            <leftChild freq="6" char="m" />
+            <rightChild freq="6" char="&quot;" />
+          </rightChild>
+        </rightChild>
+      </rightChild>
+    </rightChild>
+  </rightChild>
+</root>
