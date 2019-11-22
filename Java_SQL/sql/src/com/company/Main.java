@@ -53,7 +53,7 @@ public class Main {
     public static void CrearTabla(String nombretabla) throws Exception{
         try {
             Connection con = DriverManager.getConnection(dburl);
-            PreparedStatement create = con.prepareStatement("CREATE TABLE IF NOT EXISTS comp(nombre varchar(50), descripcion varchar(50), fecha datetime, actualizacion datetime, usuario varchar(50))");
+            PreparedStatement create = con.prepareStatement("CREATE TABLE IF NOT EXISTS+ nombretabla+(nombre varchar(50), descripcion varchar(50), fecha datetime, actualizacion datetime, usuario varchar(50))");
             create.executeUpdate();
         }
         catch (Exception e){
