@@ -23,7 +23,7 @@ public class Main {
             //Ejecutando el Query 
             //AQUÍ SEA CREA LA DATABASE
             //TECMicroserviciosDB
-            ResultSet myResultSet = myStatement.executeQuery("Select " + "from TECMicroserviciosDB");
+            ResultSet myResultSet = myStatement.executeQuery("Select " + "from TECMicroServicesDB");
 
 
             //Proceso de corrido por la tabla creada
