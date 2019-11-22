@@ -20,7 +20,9 @@ public class Main {
             //Crear un Objeto
             Statement myStatement=myConnection.createStatement();
 
-            //Ejecutando el Query
+            //Ejecutando el Query 
+            //AQUÍ SEA CREA LA DATABASE
+            //TECMicroserviciosDB
             ResultSet myResultSet = myStatement.executeQuery("Select " + "from TECMicroserviciosDB");
 
 
@@ -28,6 +30,18 @@ public class Main {
             while (myResultSet.next()) {
                 System.out.println("mensaje " + myResultSet.getString("nombre") + " ");
             }
+            
+            //Se crean las dos tablas necesarios para los archivos comprimidos y descomprimidos
+            CrearTabla("compi");
+            
+            CrearTabla("descomp");
+            
+            
+            //Aquí se corren las otras dos funciones de insertar o consultar
+            
+            Insertar("comp", "iamgenmuestra", "imagendescripcion", "fecha1", "fecha2", "Yenus");
+            
+            Obtener("comp");
         }
         catch (Exception e){
             System.out.println(e.getMessage());
@@ -36,10 +50,10 @@ public class Main {
     }
 
     //FUNCIÓN PARA CREAR LA TABLA
-    public static void CrearTabla() throws Exception{
+    public static void CrearTabla(String nombretabla) throws Exception{
         try {
             Connection con = DriverManager.getConnection(dburl);
-            PreparedStatement create = con.prepareStatement("CREATE TABLE IF NOT EXISTS TECMicroserviciosDB(nombre varchar(50), descripcion varchar(50), fecha datetime, actualizacion datetime, usuario varchar(50))");
+            PreparedStatement create = con.prepareStatement("CREATE TABLE IF NOT EXISTS comp(nombre varchar(50), descripcion varchar(50), fecha datetime, actualizacion datetime, usuario varchar(50))");
             create.executeUpdate();
         }
         catch (Exception e){
@@ -51,22 +65,27 @@ public class Main {
     }
 
     //FUNCIÓN PARA INSERTAR TABLA
-    public static void Insertar () throws  Exception{
+    public static void Insertar (String Tabla,String nombre, String desc) throws  Exception{
         final String nombre = "usuario";
         final String desc = " descripcion";
+        final String fecha = "22-11-19";
+        final String actualizado = "22-11-19";
+        final String usua = "Yenus";
+            
+            
         try{
             Connection con = DriverManager.getConnection(dburl);
-            PreparedStatement create = con.prepareStatement("Insert Into TECMicroserviciosDB(nombre,descripcion )VALUES ('"+nombre+"', '"+desc+"')"); //Aquí se agregan los elmentos
+            PreparedStatement create = con.prepareStatement("Insert Into +Tabla+(nombre,descripcion )VALUES ('"+nombre+"', '"+desc+"')"); //Aquí se agregan los elmentos
         }
         catch (Exception e){
             System.out.println(e.getMessage());
         }
     }
 
-    public static ArrayList<String> Obtener() throws Exception{
+    public static ArrayList<String> Obtener(String tabla) throws Exception{
         try{
             Connection con = DriverManager.getConnection(dburl);
-            PreparedStatement statement = con.prepareStatement("SELECT nombre,descripcion FROM TECMicroserviciosDB");
+            PreparedStatement statement = con.prepareStatement("SELECT nombre,descripcion FROM +Tabla");
 
             ResultSet result = statement.executeQuery();
 
@@ -75,6 +94,12 @@ public class Main {
                 System.out.println(result.getString("nombre"));
                 System.out.println("");
                 System.out.println(result.getString("descripcion"));
+                System.out.println("");
+                System.out.println(result.getString("fecha"));
+                System.out.println("");
+                System.out.println(result.getString("actualizacion"));
+                System.out.println("");
+                System.out.println(result.getString("usuario"));
 
                 array.add(result.getString("descripcion"));
             }
