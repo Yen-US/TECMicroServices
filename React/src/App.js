@@ -36,7 +36,7 @@ class App extends React.Component {
       })
   }
 /*callAPI() {
-    fetch("http://localhost:9000")
+    fetch("http://localhost:8000")
         .then(res => res.text())
         .then(res => this.setState({ apiResponse: res }));
 }
@@ -64,9 +64,8 @@ componentWillMount() {
           <tfoot>
           <tr>
           <td colSpan="5">
-          <div className="links"> <input type="file" name="" id="" onChange={this.handleselectedFile} />
-        <button onClick={this.handleUpload}>Upload</button>
-         <div> <a href="#">Descargar</a></div> </div>
+          <div className="links"> 
+         <div>  <a href="#">+</a> <a href="#">Descargar</a></div> </div>
           </td>
           </tr>
           </tfoot>
