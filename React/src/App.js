@@ -1,20 +1,49 @@
 import React from 'react';
 import './assets/css/App.css';
 import './assets/css/table.css';
+import axios from 'axios'
+
+const endpoint = "http://localhost:8000/upload"
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { apiResponse: "" };
-}
-callAPI() {
-    fetch("http://localhost:9000", {mode: 'no-cors'})
+  constructor() {
+    super()
+    this.state = {
+      selectedFile: null,
+      loaded: 0,
+    }
+  }
+  handleselectedFile = event => {
+    this.setState({
+      selectedFile: event.target.files[0],
+      loaded: 0,
+    })
+  }
+  handleUpload = () => {
+    const data = new FormData()
+    data.append('file', this.state.selectedFile, this.state.selectedFile.name)
+
+    axios
+      .post(endpoint, data, {
+        onUploadProgress: ProgressEvent => {
+          this.setState({
+            loaded: (ProgressEvent.loaded / ProgressEvent.total) * 100,
+          })
+        },
+      })
+      .then(res => {
+        console.log(res.statusText)
+      })
+  }
+/*callAPI() {
+    fetch("http://localhost:9000")
         .then(res => res.text())
         .then(res => this.setState({ apiResponse: res }));
 }
 componentWillMount() {
     this.callAPI();
-}
+}*/
+
   render(){
     return(
     <div className="App">
@@ -35,7 +64,9 @@ componentWillMount() {
           <tfoot>
           <tr>
           <td colSpan="5">
-          <div className="links"> <input type="file"/> <a href="#">Descargar</a></div>
+          <div className="links"> <input type="file" name="" id="" onChange={this.handleselectedFile} />
+        <button onClick={this.handleUpload}>Upload</button>
+         <div> <a href="#">Descargar</a></div> </div>
           </td>
           </tr>
           </tfoot>
