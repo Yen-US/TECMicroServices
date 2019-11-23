@@ -2,35 +2,19 @@ import React from 'react';
 import './assets/css/App.css';
 import './assets/css/table.css';
 
-/*var sql = require("mssql");
-
-    // config for your database
-    var config = {
-        user: 'sa',
-        password: 'mypassword',
-        server: 'localhost', 
-        database: 'SchoolDB'
-      }
-
-        sql.connect(config, function (err) {
-    
-          if (err) console.log(err);
-  
-          // create Request object
-          var request = new sql.Request();
-             
-          // query to the database and get the records
-          request.query('select * from Student', function (err, recordset) {
-              
-              if (err) console.log(err)
-  
-              // send records as a response
-              //res.send(recordset);
-              
-          });
-      });*/
-
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { apiResponse: "" };
+}
+callAPI() {
+    fetch("http://localhost:9000", {mode: 'no-cors'})
+        .then(res => res.text())
+        .then(res => this.setState({ apiResponse: res }));
+}
+componentWillMount() {
+    this.callAPI();
+}
   render(){
     return(
     <div className="App">
@@ -51,7 +35,7 @@ class App extends React.Component {
           <tfoot>
           <tr>
           <td colSpan="5">
-          <div className="links"> <a className="active" href="#">+</a> <a href="#">Descargar</a></div>
+          <div className="links"> <input type="file"/> <a href="#">Descargar</a></div>
           </td>
           </tr>
           </tfoot>

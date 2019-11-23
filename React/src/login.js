@@ -7,11 +7,10 @@ import Link from '@material-ui/core/Link';
 import "./index"
 import ReactDOM from 'react-dom';
 import App from "./App"
-import getLog from "./loginXML"
 
 var user = "";
 var password = "";
-var flag=false;
+var flag=true;
  
 class login extends React.Component{
 
@@ -80,14 +79,14 @@ class login extends React.Component{
 
 verLog(){
   
-  function verLogon(e){
-    if (user === e.user && password === e.password){
+  //function verLogon(e){
+    //if (user === e.user && password === e.password){
       flag=true
       return (ReactDOM.render(<App/>, document.getElementById('root')));
-    };
-  }
+    //};
+  //}
 
-  getLog().forEach(element => verLogon(element));
+  //getLog().forEach(element => verLogon(element));
   if(flag){}else{
     return (alert("Usuario o Contraseña Incorrectos"))
   }
