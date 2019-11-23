@@ -100,8 +100,15 @@ public class Main {
                 System.out.println(result.getString("actualizacion"));
                 System.out.println("");
                 System.out.println(result.getString("usuario"));
+                System.out.println("");
+                System.out.println(result.getString("path"));
 
+                array.add(result.getString("nombre"));
                 array.add(result.getString("descripcion"));
+                array.add(result.getString("fecha"));
+                array.add(result.getString("actualizacion"));
+                array.add(result.getString("usuario"));
+                array.add(result.getString("path"));
             }
             return array;
         }
