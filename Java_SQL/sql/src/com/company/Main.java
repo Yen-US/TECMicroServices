@@ -41,6 +41,10 @@ public class Main {
             Insertar("comp", "imagenmuestra", "imagendescripcion");
             
             Obtener("comp");
+
+
+            sSQL = "SELECT u.nombre, u.descripcion, u.fecha, u.actualizacion, u.usuario FROM comp U INNER JOIN descomp " +
+                    "P ON p.nombre, p.descripcion, p.fecha, p.actualizacion, p.usuario";
         }
         catch (Exception e){
             System.out.println(e.getMessage());
@@ -65,12 +69,14 @@ public class Main {
 
     //FUNCIÓN PARA INSERTAR TABLA
     public static void Insertar (String Tabla,String nombre, String desc) throws  Exception{
+        final int id = "1";
         final String nombrea = "usuario";
         final String desca = "descripcion";
         final String fecha = "22-11-19";
         final String actualizado = "22-11-19";
         final String usua = "Yenus";
         final String path ="\"./XML_Metadata/input.xml\""
+
             
             
         try{
@@ -91,6 +97,8 @@ public class Main {
 
             ArrayList<String> array = new ArrayList<>();
             while   (result.next()){
+                System.out.println(result.getString("id"));
+                System.out.println("");
                 System.out.println(result.getString("nombre"));
                 System.out.println("");
                 System.out.println(result.getString("descripcion"));
@@ -103,6 +111,7 @@ public class Main {
                 System.out.println("");
                 System.out.println(result.getString("path"));
 
+                array.add(result.getString("id"));
                 array.add(result.getString("nombre"));
                 array.add(result.getString("descripcion"));
                 array.add(result.getString("fecha"));
