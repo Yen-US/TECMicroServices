@@ -70,6 +70,7 @@ public class Main {
         final String fecha = "22-11-19";
         final String actualizado = "22-11-19";
         final String usua = "Yenus";
+        final String path ="\"./XML_Metadata/input.xml\""
             
             
         try{
