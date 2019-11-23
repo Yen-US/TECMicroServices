@@ -2,6 +2,34 @@ import React from 'react';
 import './assets/css/App.css';
 import './assets/css/table.css';
 
+/*var sql = require("mssql");
+
+    // config for your database
+    var config = {
+        user: 'sa',
+        password: 'mypassword',
+        server: 'localhost', 
+        database: 'SchoolDB'
+      }
+
+        sql.connect(config, function (err) {
+    
+          if (err) console.log(err);
+  
+          // create Request object
+          var request = new sql.Request();
+             
+          // query to the database and get the records
+          request.query('select * from Student', function (err, recordset) {
+              
+              if (err) console.log(err)
+  
+              // send records as a response
+              //res.send(recordset);
+              
+          });
+      });*/
+
 class App extends React.Component {
   render(){
     return(
@@ -23,7 +51,7 @@ class App extends React.Component {
           <tfoot>
           <tr>
           <td colSpan="5">
-          <div className="links"><a href="#">&laquo;</a> <a className="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
+          <div className="links"> <a className="active" href="#">+</a> <a href="#">Descargar</a></div>
           </td>
           </tr>
           </tfoot>

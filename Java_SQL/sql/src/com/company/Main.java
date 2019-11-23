@@ -7,9 +7,9 @@ public class Main {
 
 
     //Rutas de los archivos necesarios para correr
-    static String dburl = "jdbc:Mysql://localhost:3308"; //Nota en Local host debe colocar us IP para poder establecer la conexión
+    static String dburl = "jdbc:Mysql://localhost:3306/TECMicroServicesDB?useSSL=false"; //Nota en Local host debe colocar us IP para poder establecer la conexión
     static String username = "root";
-    static String password = "password";
+    static String password = "Yenson210";
     public static void main(String[] args) {
 
 
@@ -23,23 +23,22 @@ public class Main {
             //Ejecutando el Query 
             //AQUÍ SEA CREA LA DATABASE
             //TECMicroserviciosDB
-            ResultSet myResultSet = myStatement.executeQuery("Select " + "from TECMicroServicesDB");
-
+            /*ResultSet myResultSet = myStatement.executeQuery("Select " + "from TECMicroServicesDB");
 
             //Proceso de corrido por la tabla creada
             while (myResultSet.next()) {
                 System.out.println("mensaje " + myResultSet.getString("nombre") + " ");
-            }
+            }*/
             
             //Se crean las dos tablas necesarios para los archivos comprimidos y descomprimidos
-            CrearTabla("compi");
+            CrearTabla("comp");
             
             CrearTabla("descomp");
             
             
             //Aquí se corren las otras dos funciones de insertar o consultar
             
-            Insertar("comp", "iamgenmuestra", "imagendescripcion", "fecha1", "fecha2", "Yenus");
+            Insertar("comp", "imagenmuestra", "imagendescripcion");
             
             Obtener("comp");
         }
@@ -53,7 +52,7 @@ public class Main {
     public static void CrearTabla(String nombretabla) throws Exception{
         try {
             Connection con = DriverManager.getConnection(dburl);
-            PreparedStatement create = con.prepareStatement("CREATE TABLE IF NOT EXISTS+ nombretabla+(nombre varchar(50), descripcion varchar(50), fecha datetime, actualizacion datetime, usuario varchar(50))");
+            PreparedStatement create = con.prepareStatement("CREATE TABLE IF NOT EXISTS "+  nombretabla +"(nombre varchar(50), descripcion varchar(50), fecha datetime, actualizacion datetime, usuario varchar(50))");
             create.executeUpdate();
         }
         catch (Exception e){
@@ -66,8 +65,8 @@ public class Main {
 
     //FUNCIÓN PARA INSERTAR TABLA
     public static void Insertar (String Tabla,String nombre, String desc) throws  Exception{
-        final String nombre = "usuario";
-        final String desc = " descripcion";
+        final String nombrea = "usuario";
+        final String desca = "descripcion";
         final String fecha = "22-11-19";
         final String actualizado = "22-11-19";
         final String usua = "Yenus";
@@ -75,7 +74,7 @@ public class Main {
             
         try{
             Connection con = DriverManager.getConnection(dburl);
-            PreparedStatement create = con.prepareStatement("Insert Into +Tabla+(nombre,descripcion )VALUES ('"+nombre+"', '"+desc+"')"); //Aquí se agregan los elmentos
+            PreparedStatement create = con.prepareStatement("Insert Into "+ Tabla +" (nombre,descripcion) VALUES ("+nombrea+", "+desca+")"); //Aquí se agregan los elmentos
         }
         catch (Exception e){
             System.out.println(e.getMessage());
@@ -85,7 +84,7 @@ public class Main {
     public static ArrayList<String> Obtener(String tabla) throws Exception{
         try{
             Connection con = DriverManager.getConnection(dburl);
-            PreparedStatement statement = con.prepareStatement("SELECT nombre,descripcion FROM +Tabla");
+            PreparedStatement statement = con.prepareStatement("SELECT nombre,descripcion FROM "+tabla);
 
             ResultSet result = statement.executeQuery();
 

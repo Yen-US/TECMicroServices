@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a227b238-e5d4-4d0b-9732-24b4b83fd31b" name="Default Changelist" comment="" />
+    <list default="true" id="a227b238-e5d4-4d0b-9732-24b4b83fd31b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/tecmicroservices.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/MILIB_Metadata_DB.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_48.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/.idea/libraries/Maven__org_json_json_20090211.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/.idea/libraries/Maven__org_json_json_20090211.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/src/main/com/tec/MILIB_DB/domain/Huffman.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/src/main/com/tec/MILIB_DB/domain/Huffman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/target/classes/main/com/tec/MILIB_DB/domain/Huffman.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/target/classes/main/com/tec/MILIB_DB/domain/Huffman.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/target/classes/main/com/tec/MILIB_DB/domain/Metadata.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/target/classes/main/com/tec/MILIB_DB/domain/Metadata.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/target/classes/main/com/tec/MILIB_DB/domain/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/target/classes/main/com/tec/MILIB_DB/domain/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/target/classes/main/com/tec/MILIB_DB/domain/NodeComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/target/classes/main/com/tec/MILIB_DB/domain/NodeComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/target/classes/main/com/tec/MILIB_DB/executable/XML_test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/target/classes/main/com/tec/MILIB_DB/executable/XML_test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/target/classes/main/com/tec/MILIB_DB/executable/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/target/classes/main/com/tec/MILIB_DB/executable/test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/target/classes/main/com/tec/MILIB_DB/service/MilibRestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/target/classes/main/com/tec/MILIB_DB/service/MilibRestService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/target/classes/main/com/tec/MILIB_DB/service/dataManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/target/classes/main/com/tec/MILIB_DB/service/dataManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sql/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sql/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sql.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/App.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,11 +39,16 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1TqiEcTF4vpV8DnTnkgm6X0TqLf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TECMicroservicios" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysql-connector-java-5.1.48.jar!/" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -42,7 +73,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+    <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="sql" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -52,11 +83,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -69,10 +95,28 @@
       <option name="presentableId" value="Default" />
       <updated>1574193915867</updated>
       <workItem from="1574193920854" duration="12013000" />
+      <workItem from="1574464086745" duration="271000" />
+      <workItem from="1574464368002" duration="215000" />
+      <workItem from="1574464733808" duration="1298000" />
+      <workItem from="1574466202392" duration="2138000" />
+      <workItem from="1574470201973" duration="1920000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

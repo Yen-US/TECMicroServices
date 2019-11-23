@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="MILIB_Metadata_DB" />
         <module name="MILIB_MetadataDB" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="MILIB_Metadata_DB" target="1.8" />
       <module name="MILIB_MetadataDB" target="1.8" />
     </bytecodeTargetLevel>
   </component>

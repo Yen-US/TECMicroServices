@@ -2,7 +2,6 @@
   <library name="Maven: org.json:json:20090211">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/json/json/20090211/json-20090211.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../jdom2-2.0.5.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/org/json/json/20090211/json-20090211-javadoc.jar!/" />

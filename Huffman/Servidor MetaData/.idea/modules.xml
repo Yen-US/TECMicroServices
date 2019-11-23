@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MILIB_MetadataDB.iml" filepath="$PROJECT_DIR$/MILIB_MetadataDB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MILIB_Metadata_DB.iml" filepath="$PROJECT_DIR$/MILIB_Metadata_DB.iml" />
     </modules>
   </component>
 </project>

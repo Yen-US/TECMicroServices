@@ -51,8 +51,8 @@ public class Huffman {
 
 
     private static Node GlobalRoot;
-    private static String file_path = "/home/joshua/Descargas/CE2103-My-Invinsible-Library-master/" +
-            "Servidor MetaData/XML_Metadata/input.xml";
+    private static String file_path =
+            "./XML_Metadata/input.xml";
     private static String path = file_path.substring(0, file_path.length() - 9);
     private static String GlobalDecoded="";
 
