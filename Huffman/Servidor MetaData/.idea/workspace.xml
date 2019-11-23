@@ -7,16 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02284dce-3526-487a-b240-7662be33298d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.idea/tecmicroservices.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java_SQL/sql/.idea/libraries/mysql_connector_java_5_1_48.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java_SQL/sql/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Express/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Express/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Java_SQL/sql/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_SQL/sql/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Java_SQL/sql/out/production/sql/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_SQL/sql/out/production/sql/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java_SQL/sql/sql.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_SQL/sql/sql.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Java_SQL/sql/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_SQL/sql/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../React/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React/src/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../React/src/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React/src/upF.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +65,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Java_SQL/sql" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -77,7 +75,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.25" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -387,6 +385,7 @@
       <workItem from="1574464692592" duration="640000" />
       <workItem from="1574466180747" duration="1249000" />
       <workItem from="1574470193987" duration="598000" />
+      <workItem from="1574494097087" duration="4294000" />
     </task>
     <servers />
   </component>
@@ -420,7 +419,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/com/tec/MILIB_DB/domain/Huffman.java</url>
-          <line>56</line>
+          <line>53</line>
           <properties field="GlobalDecoded" class="main.com.tec.MILIB_DB.domain.Huffman" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>

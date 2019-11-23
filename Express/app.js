@@ -6,8 +6,24 @@ const bodyParser = require('body-parser')
 const fileUpload = require('express-fileupload')
 const cors = require('cors')
 var testAPIRouter = require("./routes/test");
-
+var parser = require('xml2json');
+var fs = require("fs");
 const app = express()
+const mysql = require('mysql');
+
+// First you need to create a connection to the db
+const con = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: 'Yenson210',
+});
+
+var lognfo;
+
+fs.readFileSync( './security/userPass.xml', function(err, data) {
+    lognfo = JSON.parse(parser.toJson(data, {reversible: true}));
+    console.log(lognfo)
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))
@@ -44,6 +60,14 @@ app.post('/upload', (req, res, next) => {
     },
   )
 })
+
+app.post('/login', (req, res, next) => {
+    nombre= req.body.nombre
+    descripcion= req.body.descripcion
+    lognfo.log;
+    if (user === e.user && password === e.password){
+    res.json({ flag: true })}
+});
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

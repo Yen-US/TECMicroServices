@@ -43,8 +43,11 @@ public class Main {
             Obtener("comp");
 
 
-            sSQL = "SELECT u.nombre, u.descripcion, u.fecha, u.actualizacion, u.usuario FROM comp U INNER JOIN descomp " +
+            String sSQL = "SELECT u.nombre, u.descripcion, u.fecha, u.actualizacion, u.usuario FROM comp U INNER JOIN descomp " +
                     "P ON p.nombre, p.descripcion, p.fecha, p.actualizacion, p.usuario";
+
+            myStatement = myConnection.prepareStatement(sSQL);
+
         }
         catch (Exception e){
             System.out.println(e.getMessage());
@@ -57,6 +60,7 @@ public class Main {
         try {
             Connection con = DriverManager.getConnection(dburl);
             PreparedStatement create = con.prepareStatement("CREATE TABLE IF NOT EXISTS "+  nombretabla +"(nombre varchar(50), descripcion varchar(50), fecha datetime, actualizacion datetime, usuario varchar(50))");
+
             create.executeUpdate();
         }
         catch (Exception e){
@@ -69,13 +73,13 @@ public class Main {
 
     //FUNCIÓN PARA INSERTAR TABLA
     public static void Insertar (String Tabla,String nombre, String desc) throws  Exception{
-        final int id = "1";
+        final int id = 1;
         final String nombrea = "usuario";
         final String desca = "descripcion";
         final String fecha = "22-11-19";
         final String actualizado = "22-11-19";
         final String usua = "Yenus";
-        final String path ="\"./XML_Metadata/input.xml\""
+        final String path ="\"./XML_Metadata/input.xml\"";
 
             
             

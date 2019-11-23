@@ -4,10 +4,7 @@ package main.com.tec.MILIB_DB.domain;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.PriorityQueue;
+import java.util.*;
 
 import org.jdom2.Document;
 import org.jdom2.Element;
@@ -62,6 +59,7 @@ public class Huffman {
 
     // traverse the Huffman Tree and store Huffman Codes
     // in a map.
+
 
     public static void encode(Node root, String str,
                               Map<Character, String> huffmanCode)

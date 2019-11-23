@@ -3,8 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="a227b238-e5d4-4d0b-9732-24b4b83fd31b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../Express/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Express/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/MILIB_Metadata_DB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/MILIB_Metadata_DB.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/src/main/com/tec/MILIB_DB/domain/Huffman.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Huffman/Servidor MetaData/src/main/com/tec/MILIB_DB/domain/Huffman.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sql/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sql/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../React/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../React/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React/src/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../React/src/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../React/src/upF.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,14 +33,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysql-connector-java-5.1.48.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Huffman/Servidor MetaData" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
@@ -78,7 +85,8 @@
       <workItem from="1574464733808" duration="1298000" />
       <workItem from="1574466202392" duration="2138000" />
       <workItem from="1574470201973" duration="1920000" />
-      <workItem from="1574490822093" duration="142000" />
+      <workItem from="1574490822093" duration="741000" />
+      <workItem from="1574494027039" duration="3195000" />
     </task>
     <servers />
   </component>

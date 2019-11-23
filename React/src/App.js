@@ -1,48 +1,27 @@
 import React from 'react';
 import './assets/css/App.css';
 import './assets/css/table.css';
-import axios from 'axios'
 
-const endpoint = "http://localhost:8000/upload"
+import Popup from './components/Popup';
+
+
 
 class App extends React.Component {
+  
   constructor() {
     super()
     this.state = {
-      selectedFile: null,
-      loaded: 0,
+      showPopup: false,
     }
   }
-  handleselectedFile = event => {
-    this.setState({
-      selectedFile: event.target.files[0],
-      loaded: 0,
-    })
-  }
-  handleUpload = () => {
-    const data = new FormData()
-    data.append('file', this.state.selectedFile, this.state.selectedFile.name)
 
-    axios
-      .post(endpoint, data, {
-        onUploadProgress: ProgressEvent => {
-          this.setState({
-            loaded: (ProgressEvent.loaded / ProgressEvent.total) * 100,
-          })
-        },
-      })
-      .then(res => {
-        console.log(res.statusText)
-      })
-  }
-/*callAPI() {
-    fetch("http://localhost:8000")
-        .then(res => res.text())
-        .then(res => this.setState({ apiResponse: res }));
+togglePopup() {
+  
+  this.setState({
+    showPopup: !this.state.showPopup
+    
+  });
 }
-componentWillMount() {
-    this.callAPI();
-}*/
 
   render(){
     return(
@@ -65,7 +44,12 @@ componentWillMount() {
           <tr>
           <td colSpan="5">
           <div className="links"> 
-         <div>  <a href="#">+</a> <a href="#">Descargar</a></div> </div>
+         <div>  <a onClick={this.togglePopup.bind(this)}>+</a>{this.state.showPopup ?
+         <Popup
+          closePopup={this.togglePopup.bind(this)}
+         />
+         : null
+       } <a href="#">Descargar</a></div> </div>
           </td>
           </tr>
           </tfoot>

@@ -1,16 +1,18 @@
-<user1>
-    <user/>admin</user>
-    <password/>admin</password>
-</user1>
-<user2>
-    <user/>yen</user>
-    <password/>yen</password>
-</user2>
-<user3>
-    <user/>ash</user>
-    <password/>ash</password>
-</user3>
-<user4>
-    <user/>jos</user>
-    <password/>jos</password>
-</user4>
+<log>
+    <user1>
+        <user>admin</user>
+        <password>admin</password>
+    </user1>
+    <user2>
+        <user>yen</user>
+        <password>yen</password>
+    </user2>
+    <user3>
+        <user>ash</user>
+        <password>ash</password>
+    </user3>
+    <user4>
+        <user>jos</user>
+        <password>jos</password>
+    </user4>
+</log>

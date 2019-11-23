@@ -7,12 +7,42 @@ import Link from '@material-ui/core/Link';
 import "./index"
 import ReactDOM from 'react-dom';
 import App from "./App"
+import axios from 'axios'
 
-var user = "";
-var password = "";
-var flag=true;
- 
+
+
+var flag=false;
+var user = ""
+var password =""
 class login extends React.Component{
+
+  handleInputChangeu = e => {
+      user = e.target.value;
+    
+  };
+  handleInputChangep = e => {
+    password = e.target.value;
+  
+};
+
+  handleSubmit = e => {
+    e.preventDefault();
+
+    const { user, password } = this.state;
+
+    const fileMeta = {
+      user,
+      password,
+    };
+
+    axios
+      .post('http://localhost:8000/login', fileMeta)
+      .then(() => console.log('Login Reached'))
+      .catch(err => {
+        console.error(err);
+      });
+  };
+
 
   render() {
     return(
@@ -32,7 +62,7 @@ class login extends React.Component{
               name="user"
               autoComplete="user"
               autoFocus
-              onChange={this._handleTextFieldChangeU}
+              onChange={this.handleInputChangeu}
             />
 
             <TextField
@@ -46,7 +76,7 @@ class login extends React.Component{
               type="password"
               id="password"
               autoComplete="current-password"
-              onChange={this._handleTextFieldChangeP}
+              onChange={this.handleInputChangep}
             />
             <Button
               type="submit"
@@ -79,27 +109,18 @@ class login extends React.Component{
 
 verLog(){
   
-  //function verLogon(e){
-    //if (user === e.user && password === e.password){
+  
+    if (user === "admin" && password === "admin"){
       flag=true
       return (ReactDOM.render(<App/>, document.getElementById('root')));
-    //};
-  //}
+    
+  }
 
-  //getLog().forEach(element => verLogon(element));
   if(flag){}else{
     return (alert("Usuario o Contraseña Incorrectos"))
   }
 }
 
-_handleTextFieldChangeU(e){
-    user=e.target.value
-    
-}
-
-_handleTextFieldChangeP(e){
-  password=e.target.value
-}
 }
 
 export default login
